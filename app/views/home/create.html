@@ -1,0 +1,21 @@
+<h1>Listing</h1>
+<% if @result.nil? %>
+	<h1>No offers available</h1>
+<%else%>
+	<table style="width:100%">
+		<tr>
+			<th>Title</th>
+			<th>Thumbnail</th>
+			<th>Payout</th>
+			
+		</tr>
+	
+		<% @result.each do |res| %>
+			<tr>
+			    <td><%= res["title"]%></td>
+			    <td><%= res["thumbnail"]["lowres"]%></td> 
+			    <td><%= res["payout"]%></td> 
+			</tr>
+		<%end%>
+	</table>
+<%end%>

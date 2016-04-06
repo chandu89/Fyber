@@ -1,0 +1,12 @@
+<%= form_for @param, url: {action: "create"} do |f| %>
+	<%= f.label :UID ,:style=> "font-family: 'ReplicaStdLight'; font-size: 1.5em; color: black; z-index: 100;"%>
+    <%= f.text_field :uid,:style=>"font-size: 14px; color:black;"%>
+    <br/>
+    <%= f.label :Pub ,:style=> "font-family: 'ReplicaStdLight'; font-size: 1.5em; color: black; z-index: 100;"%>
+    <%= f.text_field :pub,:style=>"font-size: 14px; color:black;"%>
+    <br/>
+    <%= f.label :Page ,:style=> "font-family: 'ReplicaStdLight'; font-size: 1.5em; color: black; z-index: 100;"%>
+    <%= f.number_field :page,:style=>"font-size: 14px; color:black;"%>
+    <br/>
+    <%= f.submit  "add params" ,:style=> "font-size: 14px;" %>
+<%end%>
