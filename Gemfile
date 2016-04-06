@@ -15,6 +15,10 @@ gem  'json'
 
 group :development, :test do
   gem 'debugger'
+  gem "rspec-rails", ">= 2.0.1"
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'rspec-core'
 end
 
 group :development do

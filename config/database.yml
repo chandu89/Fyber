@@ -10,7 +10,7 @@ development:
   <<: *default
   database: Fyber_development
 
-test:
+test: &test
   <<: *default
   database: Fyber_test
 
@@ -18,3 +18,5 @@ production:
   <<: *default
   database: Fyber_production
   
+cucumber:
+  <<: *test
